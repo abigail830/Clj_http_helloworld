@@ -1,6 +1,6 @@
 (ns clojure-simple-http.core
-  (:require [org.httpkit.server :refer [run-server]]
-            ))
+  (:require [org.httpkit.server :refer [run-server]])
+  (:gen-class))
 
 (defn app [req]
   {:status  200
